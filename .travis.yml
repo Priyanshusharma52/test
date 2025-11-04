@@ -1,0 +1,13 @@
+language: bash
+
+os: linux
+dist: focal
+
+script:
+  - echo "Starting Travis CI test..."
+  - for i in {1..5}; do
+      echo "Iteration $i: Sleeping for 5 seconds...";
+      sleep 5;
+      echo "Iteration $i complete.";
+    done
+  - echo "All iterations finished successfully!"
